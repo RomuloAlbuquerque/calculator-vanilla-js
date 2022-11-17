@@ -28,11 +28,11 @@ const insert = (num) => {
   
   content === ""
     ? operators.includes(num) || noLeft.includes(num)
-      ? clean()
+      ? null
       : setPanelNum(num)
     : operatorsDot.includes(content.slice(-1))
     ? operators.includes(num) || noLeft.includes(num)
-      ? clean()
+      ? null
       : setPanelContentNum(content, num)
     : setPanelContentNum(content, num);
 };
