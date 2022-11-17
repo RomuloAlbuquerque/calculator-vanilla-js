@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>Calculadora</title>
+</head>
+<body>
+    <div class="container">
+        <div class="platform">
+            <div class="title common-settings">
+                <h1>Calculadora</h1>
+            </div>
+            <div id="panel" class="panel common-settings">
+                <p id="memory"></p>
+                <h1 id="panel-text"></h1>
+            </div>
+            <div class="buttons-set common-settings">
+                <div class="horizontal-set">
+                    <div class="horizontal-signals">
+                        <button id="clear" onclick="clean()">C</button>
+                        <button id="division" onclick="insert('/')">/</button>
+                        <button id="multiplication" onclick="insert('*')">x</button>
+                    </div>
+                    <div class="numbers">
+                        <button id="seven" onclick="insert(7)">7</button>
+                        <button id="eight" onclick="insert(8)">8</button>
+                        <button id="nine" onclick="insert(9)">9</button>
+                    </div>
+                    <div class="numbers">
+                        <button id="four" onclick="insert(4)">4</button>
+                        <button id="five" onclick="insert(5)">5</button>
+                        <button id="six" onclick="insert(6)">6</button>
+                    </div>
+                    <div class="numbers">
+                        <button id="one" onclick="insert(1)">1</button>
+                        <button id="two" onclick="insert(2)">2</button>
+                        <button id="three" onclick="insert(3)">3</button>
+                    </div>
+                    <div class="zero-point">
+                        <button id="zero" onclick="insert(0)">0</button>
+                        <button id="point" onclick="insert('.')">.</button>
+                    </div>
+                </div>
+                <div class="vertical-set">
+                    <div class="vertical-signals">
+                        <button id="minus" onclick="insert('-')">-</button>
+                        <button id="plus" onclick="insert('+')">+</button>
+                        <button id="equal" onclick="calcular()">=</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
